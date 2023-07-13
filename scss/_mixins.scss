@@ -1,0 +1,14 @@
+
+//textos
+@mixin texto($font-family, $font-size, $font-weight, $line-height, $color, $text-align){
+     font-family:$font-family;
+     font-size:$font-size;
+     font-weight:$font-weight;
+     line-height: $font-size;
+     color:$color;
+     text-align:$text-align;
+
+     @if $text-align == center{text-align: center}
+     @else if $text-align == right {text-align: right}
+     @else if $text-align == left {text-align: left;}
+}

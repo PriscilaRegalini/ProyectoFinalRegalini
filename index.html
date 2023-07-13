@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- seo -->
+    <meta name="description" content="Priscila, diseño y desarrollo web. Trabajos de diseño y de web. Estudios, herramientas que manejo y testimonios.">
+    <meta autor="Priscila Regalini">
+    <meta copyright="Priscila Regalini 2023">
+    <meta name="keywords"  content="HTML, CSS, SASS, GIT, GITHUB, Adobe, Bootstrap, diseño, desarrollo web ">
+    <meta robots="index, follow">
+    <!-- fin seo -->
+    <title>Mr Submit - Crea Certificados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="img/principales/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand mrSubmitNav" href="index.html">Mr. Submit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item " >
+              <a id="crearCertificado" class="nav-link noLogeado text-info fs-5 fw-regular " href="pages/crear.html">Crear Certificado</a>
+            </li>
+            <li class="nav-item " >
+              <a id="cerrarSesion" class="nav-link noLogeado text-info fs-5 fw-regular" href="index.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+
+        </div>
+    </div>
+  </nav>
+
+      <header id="mrSubmit" class="mrSubmit">
+        <div class=" text-center presentacion ">
+          <div class="card-body">
+            <h1 id="h1Index">CREA CERTIFICADOS</h1>
+            <h2 class="textGray">El <strong>tiempo</strong> es valioso, por ésto decidimos </h2>
+            <h2 class="textGray"> acercarte <strong>plantillas prediseñadas</strong> para facilitarte ésta tarea.</h2>
+            <h2 class="textGray ">Seleccionas el <strong>fondo</strong>, Completas los campos y <strong>listo!</strong></h2>
+
+            <br>
+      
+            <h2 class="textGray textLightBlue bgBlue">CREAR ES ASÍ DE <strong class="textSecundario">SIMPLE</strong></h2>   
+        </div>
+
+        
+      </header>
+      <main>
+    <div class="registroUsuario">
+      <h2 id="h3Index" class="tituloRegistro">Regístrate para comenzar</h2>
+      <a id="btnCrearCertificado" class="btn btn-primary noLogeado " href="pages/crear.html">Crear Certificado</a>
+
+      <form  id="formRegistro" class="container-fluid boxForm presentacion">
+        <div class="col-md-4">
+          <input id="nombreUsuario" type="text" class="form-control" placeholder="Nombre" aria-label="Last name">
+          <label id="usuarioValidacion" class="bienHecho"> </label>
+        </div>
+        <div class="col-md-4">
+          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.com...">
+          <label id="emailValidacion" class="bienHecho"> </label>
+        </div>
+        <div class="col-md-4">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="Password1" >
+          <label id="passwordValidacion" class="bienHecho"> </label>
+        </div>
+  
+        <br>
+        <button id="registrarme" type="submit" class="btn btn-primary">Registrarme</button>
+      </form>
+    
+
+    </div>
+    <div class="mrSubmit">
+        <div class=" text-center presentacion ">       
+          <h2 class=" textLightBlue textSecundario bordeBottom"><strong class="textSecundario">ENTREGAR FELICIDAD</strong><span class="textH4 textSecundario"> se vuelve sencillo.</span></h2>
+        </div>
+    </div>
+
+
+      </main>
+
+      <footer>
+      </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>  
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
+        <script src="js/registrar.js"> </script>
+  </body>
+</html>

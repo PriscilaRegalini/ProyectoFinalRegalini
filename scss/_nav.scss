@@ -1,0 +1,36 @@
+
+nav{
+    position: fixed;
+    .mrSubmitNav{
+        @include  texto($fontSecundaria, $textLg, $fontBold, $textXl, map-get($map: $colores, $key:'tres' ), left );
+        padding-left: 10px;
+    }
+    a{
+        font-family: $fontPrincipal;
+        padding: 20px;
+
+        &:hover{
+        color: map-get($map: $colores, $key:'tres' ) !important;
+        }
+
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px ;
+}
+
+
+.logeado{
+    display: flex;
+}
+.noLogeado{
+    background-color: aqua;
+    opacity: 0;
+    display: none;
+}
+

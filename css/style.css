@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@0,100;0,300;0,600;0,700;1,100;1,300;1,600&display=swap");
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+}
+nav .mrSubmitNav {
+  font-family: "Delicious Handrawn", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2em;
+  color: #0d6efd;
+  text-align: left;
+  text-align: left;
+  padding-left: 10px;
+}
+nav a {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px;
+}
+nav a:hover {
+  color: #0d6efd !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+.logeado {
+  display: flex;
+}
+
+.noLogeado {
+  background-color: aqua;
+  opacity: 0;
+  display: none;
+}
+
+.boxForm {
+  margin: 20px;
+  padding: 20px;
+}
+
+.bgBlue {
+  background-color: #0d6efd;
+  padding: 20px;
+}
+
+.bgLightBlue {
+  background-color: #0dcaf0;
+}
+
+.bgOrange {
+  background-color: #ffcc33;
+}
+
+label {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 3em;
+  color: #0dcaf0;
+  text-align: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mrSubmit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.mrSubmit .presentacion {
+  width: 100%;
+}
+.mrSubmit .textH3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2em;
+  color: #0d6efd;
+  text-align: center;
+  text-align: center;
+}
+.mrSubmit .textGray {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #383838;
+  text-align: center;
+  text-align: center;
+}
+.mrSubmit .textH4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: black;
+  text-align: center;
+  text-align: center;
+}
+.mrSubmit .textLightBlue {
+  color: #0dcaf0;
+}
+.mrSubmit .textSecundario {
+  font-family: "Delicious Handrawn", sans-serif;
+  font-size: 1.5em;
+}
+.mrSubmit .bordeBottom {
+  border-bottom: solid 1px #383838;
+  border-top: solid 1px #383838;
+  padding: 30px;
+}
+
+.registroUsuario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registroUsuario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registroUsuario .tituloRegistro {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #0dcaf0;
+  text-align: center;
+  text-align: center;
+  margin-bottom: -20px;
+  margin-top: 50px;
+}
+
+.noMostrarCertificado {
+  display: none;
+}
+
+.mostrarCertificado {
+  display: flex;
+}
+
+#btnCrearCertificado {
+  width: 150px;
+  margin: 50px;
+}
+
+.formOn {
+  display: flex;
+}
+
+.formOff {
+  display: none;
+}
+
+.bienHecho {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 0.7em;
+  color: #35a604;
+  text-align: center;
+  text-align: center;
+  margin: 10px, 0px;
+  font-weight: 3em;
+}
+
+.malHecho {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  line-height: 0.7em;
+  color: #d52727;
+  text-align: center;
+  text-align: center;
+  margin: 10px, 0px;
+}
+
+#faltanCampos {
+  text-align: left;
+}
+
+form {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #0d6efd;
+  text-align: left;
+  text-align: left;
+}
+
+.certificadoStyle {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 600px;
+}
+
+.contenedorCertificados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.contenedorCertificados .fondoCertificado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo1 {
+  background-image: url("../img/fondo1.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+
+.fondo2 {
+  background-image: url("../img/fondo2.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+
+.fondo3 {
+  background-image: url("../img/fondo3.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+
+.fondo4 {
+  background-image: url("../img/fondo4.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+
+.fondo5 {
+  background-image: url("../img/fondo5.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+}
+
+.h2Tipo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2em;
+  color: black;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.h3Institucion {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: black;
+  text-align: center;
+  text-align: center;
+  margin-bottom: -20px;
+  padding: 10px;
+}
+
+.h2Destinatario {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2em;
+  color: black;
+  text-align: center;
+  text-align: center;
+  margin-bottom: -10px;
+  padding: 10px;
+}
+
+.firmas {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 0.9em;
+  color: black;
+  text-align: left;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 70px;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

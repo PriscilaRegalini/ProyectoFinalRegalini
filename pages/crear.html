@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mr Submit - Crea Certificados</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/principales/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+              <a class="navbar-brand mrSubmitNav" href="../index.html">Mr. Submit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a id="crearCertificado" class="nav-link text-info fs-5 fw-regular" href="crear.html">Crear Certificado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="cerrarSesion" class="nav-link text-info fs-5 fw-regular" href="../index.html">Cerrar sesión</a>
+                  </li>
+                </ul>
+              </div>
+           </div>
+    </nav> 
+    <header id="mrSubmit">
+
+
+    </header>
+    <main>
+
+        <form id="formCertificado" class="row g-3 container-fluid boxForm formOn" >
+            <div class="col-md-6 ">
+    
+            <div class="col-md-5">
+                <select id="fondo" class="form-select" aria-label="Default select example">
+                <option  value="sinFondo"  selected>Seleccione fondo</option>
+                <option id="fondo1" value="fondo1">Con marco</option>
+                <option id="fondo2" value="fondo2">En rojo y azul</option>
+                <option id="fondo3" value="fondo3">En Colores</option>
+                <option id="fondo4" value="fondo4">En azul</option>
+                <option id="fondo5" value="fondo5">Sweet</option>
+                </select>
+                
+            </div> 
+            <label id="fondoValidacion" class="bienHecho"> </label>
+    <br>
+            <div class="row-md">
+                <div class="col-md-10">
+                    <select id="tipo" class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione el tipo de certificado</option>
+                    <option value="CERTIFICADO DE GRADUCACIÓN">de Graduación</option>
+                    <option value="CERTIFICADO DE RECONOCIMIENTO">de Reconocimiento</option>
+                    <option value="CERTIFICADO DE PARTICIPACIÓN">de Participación</option>
+                    </select>
+                    <label id="tipoValidacion" class="bienHecho"> </label>
+                </div>
+            </div> 
+            
+                    <div class="row">
+                    <div class="col-md-10">
+                      <label for="exampleFormControlTextarea1" class="form-label">Nombre de la <strong>Institución</strong></label>
+                        <input id="institucion" type="text" class="form-control" placeholder="Nombre de la Institución..." aria-label="First name">
+                        <label class="institucionValidacion" id="institucionValidacion" class="bienHecho"> </label>
+                    
+                      </div>
+                      <br>
+                    <div class="col-md-10">
+                      <label for="exampleFormControlTextarea1" class="form-label">Escriba el <strong>motivo</strong>  de este certificado</label>
+                        <input id="motivo" type="text" class="form-control" placeholder="El motivo es por..." aria-label="Last name">
+                        <label id="motivovalidacion" class="bienHecho"> </label>
+                    </div>
+                    </div>
+                
+                <div class="row-md-4">
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Complete los campos según la <strong>cantidad de firmantes</strong> que necesita su certificado </label>
+                    <input class="form-control" id="firmante1" rows="1" placeholder="Aquí el Primer firmante..."></input>
+                    <input class="form-control" id="firmante2" rows="1" placeholder="Aquí el Segundo firmante..."></input>
+                    <input class="form-control" id="firmante3" rows="1" placeholder="Aquí el Tercer firmante..."></input>
+                    </div>
+                </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Pegue o escriba el listado de los  <strong>destinatarios</strong>  separados por coma ( , )</label>
+                    <textarea class="form-control" id="destinatarios" rows="3" placeholder="Juan Perez, Pepe Argento..."></textarea>
+                    <label id="destinatarioValidacion" class="bienHecho"> </label>
+<br>    
+                    <label id="faltanCampos" class="malHecho"> </label>
+                    <div class="col-12">   
+                    <button id="crear" class="btn btn-primary" type="submit">Crear Certificado</button>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+          
+        </form>
+
+
+        <div class="container-fluid contenedorCertificados ">
+          <div id="fondoCertificado" class="" >
+
+            
+          
+          </div>
+         
+       </div>
+    
+
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> 
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
+    <script src="../js/app.js"> </script>
+    <script src="../js/fondos.js"> </script>
+
+</body>
+</html>

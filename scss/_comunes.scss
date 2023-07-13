@@ -1,0 +1,247 @@
+
+.boxForm{
+    margin: 20px;
+    padding: 20px;
+}
+//bg
+.bgBlue{
+
+    background-color: map-get($map: $colores, $key:'tres' );
+    padding: 20px;
+}
+.bgLightBlue{
+
+    background-color: map-get($map: $colores, $key:'cuatro' );
+   
+}
+.bgOrange{
+    background-color: map-get($map: $colores, $key:'ocho' );
+}
+
+
+
+label {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    @include  texto($fontPrincipal, $textXl, $fontBold, $textXl, map-get($map: $colores, $key:'cuatro' ), center );
+    margin-top: 20px;
+}
+
+
+
+
+.mrSubmit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 60px;
+
+    .presentacion{
+    
+        width: 100%;
+    
+    }
+
+    .textH3{
+        @include  texto($fontPrincipal, $textLg, $fontBold, $textXl, map-get($map: $colores, $key:'tres' ), center );
+    }
+
+
+    .textGray{
+        @include  texto($fontPrincipal, $textMd, $fontRegular, $textXl, map-get($map: $colores, $key:'nueve' ), center );
+    
+    }
+    .textH4{
+        @include  texto($fontPrincipal, $textSm, $fontRegular, $textXl, map-get($map: $colores, $key:'cinco' ), center );
+
+    }
+    .textLightBlue{
+
+        color: map-get($map: $colores, $key:'cuatro' ) ;
+    }
+
+    .textSecundario{
+        font-family: $fontSecundaria;
+        font-size: $textMd;
+    }
+    .bordeBottom{
+        border-bottom: solid 1px map-get($map: $colores, $key:'nueve' ) ;
+        border-top: solid 1px map-get($map: $colores, $key:'nueve' ) ;
+        padding: 30px;
+    }
+}
+
+
+.registroUsuario{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .tituloRegistro{
+        @include  texto($fontPrincipal, $textMd, $fontBold, $textXl, map-get($map: $colores, $key:'cuatro' ), center );
+        margin-bottom: -20px;
+        margin-top: 50px;
+    }
+
+}
+
+.noMostrarCertificado{
+    display: none;
+}
+.mostrarCertificado{
+    display: flex;
+}
+
+#btnCrearCertificado{
+
+    width: 150px;
+    margin: 50px;
+}
+
+
+//form
+.formOn{
+
+    display:flex;
+}
+.formOff{
+
+    display:none;
+}
+
+.bienHecho{
+
+@include  texto($fontPrincipal, $textMini, $fontBold, $textXl, map-get($map: $colores, $key:'uno' ), center );
+
+margin: 10px, 0px;
+font-weight: 3em;
+
+}
+
+.malHecho{
+
+@include  texto($fontPrincipal, $textMini, $fontBold, $textXl, map-get($map: $colores, $key:'dos' ), center );
+   
+margin: 10px, 0px;
+
+}
+
+#faltanCampos{
+
+   text-align: left; 
+}
+
+
+form{
+    @include  texto($fontPrincipal, $textSm, $fontRegular, $textSm, map-get($map: $colores, $key:'tres' ), left );
+
+}
+
+
+
+.certificadoStyle{
+    font-family: $fontPrincipal;
+    font-weight: $fontBold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 600px;
+
+}
+
+.contenedorCertificados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+    .fondoCertificado{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.fondo1{
+ background-image: url("../img/fondo1.png");
+ background-repeat: no-repeat;
+ width: 900px;
+ height: 600px;
+}
+.fondo2{
+    background-image: url("../img/fondo2.png");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+}
+.fondo3{
+    background-image: url("../img/fondo3.png");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+   
+}
+.fondo4{
+    background-image: url("../img/fondo4.png");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+ 
+}
+.fondo5{
+    background-image: url("../img/fondo5.png");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+
+}
+
+//certificado
+
+.h2Tipo{
+
+    @include  texto($fontPrincipal, $textLg, $fontBold, $textLg, map-get($map: $colores, $key:'cinco' ), center );
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.h3Institucion{
+    @include  texto($fontPrincipal, $textMd, $fontBold, $textMd, map-get($map: $colores, $key:'cinco' ), center );
+    margin-bottom: -20px;
+    padding: 10px;
+
+}
+
+.h2Destinatario{
+
+    @include  texto($fontPrincipal, $textLg, $fontBold, $textMd, map-get($map: $colores, $key:'cinco' ), center );
+    margin-bottom: -10px;
+    padding: 10px;
+}
+
+.firmas{
+
+    @include  texto($fontPrincipal, $textSxx, $fontRegular, $textSm, map-get($map: $colores, $key:'cinco' ), left );
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 30px;
+}
