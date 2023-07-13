@@ -31,7 +31,6 @@ btnRegistrarme.addEventListener('click', (e) => {
 
   validarParaMostrar= validoRegistro.some(elem => elem === false); 
 
-  /* alert('Valor de validarParaMostrar: ' + validarParaMostrar); */
 
   if (!validarParaMostrar) {
 
@@ -72,6 +71,8 @@ NavMenuCerrarSesion.addEventListener('click', (e) => {
   localStorage.clear();
  
 });
+
+
 //validaciones
 function validacionCampos(valor){
 
@@ -97,7 +98,7 @@ function validacionCampos(valor){
     }
   }
 }
-
+//
 
 function registrarUsuario() {
 
