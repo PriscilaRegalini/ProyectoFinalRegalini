@@ -285,6 +285,10 @@ function mostrarCertificados() {
           
 
           };
+      
+      const mrSubmitCrearPresentacion=document.getElementById('mrSubmitCrearPresentacion');
+      mrSubmitCrearPresentacion.remove();
+
 
       } while (i < arrayDestinatarios.length);
 
