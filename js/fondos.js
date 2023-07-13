@@ -10,7 +10,7 @@ fondo1.addEventListener('click', (e) => {e.preventDefault();
   Swal.fire({
     title: 'Fondo con marco',
     text: 'Nada mejor que un clásico',
-    imageUrl: '../img/fondo1.png',
+    imageUrl: '../img/fondo1.webp',
     imageWidth: 300,
     imageHeight: 200,
     imageAlt: 'Custom image',
@@ -21,7 +21,7 @@ fondo2.addEventListener('click', (e) => {e.preventDefault();
   Swal.fire({
     title: 'Fondo en rojo y azul',
     text: 'Discreto esta bueno',
-    imageUrl: '../img/fondo2.png',
+    imageUrl: '../img/fondo2.webp',
     imageWidth: 300,
     imageHeight: 200,
     imageAlt: 'Custom image',
@@ -32,7 +32,7 @@ fondo3.addEventListener('click', (e) => {e.preventDefault();
     Swal.fire({
       title: 'Fondo en Colores',
       text: 'Alégre!',
-      imageUrl: '../img/fondo3.png',
+      imageUrl: '../img/fondo3.webp',
       imageWidth: 300,
       imageHeight: 200,
       imageAlt: 'Custom image',
@@ -43,7 +43,7 @@ fondo3.addEventListener('click', (e) => {e.preventDefault();
     Swal.fire({
       title: 'Fondo en azul',
       text: 'Muy bueno!',
-      imageUrl: '../img/fondo4.png',
+      imageUrl: '../img/fondo4.webp',
       imageWidth: 300,
       imageHeight: 200,
       imageAlt: 'Custom image',
@@ -54,7 +54,7 @@ fondo3.addEventListener('click', (e) => {e.preventDefault();
     Swal.fire({
       title: 'Fondo sweet',
       text: 'Lindos colores pastel',
-      imageUrl: '../img/fondo5.png',
+      imageUrl: '../img/fondo5.webp',
       imageWidth: 300,
       imageHeight: 200,
       imageAlt: 'Custom image',

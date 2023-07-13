@@ -1,12 +1,9 @@
 
 const arrayCertificado=[];
 
-
 //formulario
 let selectFondo = document.getElementById('fondo');
 let fondoCertificado= document.getElementById('fondoCertificado'); 
-
-
 let formCertificado=document.getElementById('formCertificado');
 let tipo = document.getElementById('tipo');
 let tipoValidacion=document.getElementById('tipoValidacion');
@@ -20,21 +17,15 @@ let destinatarios = document.getElementById('destinatarios');
 let destinatarioValidacion=document.getElementById('destinatarioValidacion');
 const btnCrear = document.getElementById('crear');
 let faltanCampos=document.getElementById('faltanCampos');
-
-
-
 let firma1= document.getElementById('firmante1');
 let firma2= document.getElementById('firmante2');
 let firma3= document.getElementById('firmante3');
 
 const arrayUsuarios=[];
-
 let listaDestinatarios;
 let arrayDestinatarios=[];
 let arrayFirmas=[];
-
 let validarParaMostrar;
-
 let valido=[];
 
 
@@ -53,7 +44,7 @@ class nuevoCertificado{
   
     }
 }
-//menú Crear Certificado
+//MENÚ Crear Certificado
 const crearCertificado=document.getElementById('crearCertificado');
 
 crearCertificado.onclick = myFunction;
@@ -157,7 +148,6 @@ function validandoCampos(){
 
 }
 
-
 function validacionVacio(valor){
 
   const vacio= valor != '' && isNaN(valor) != false ;
@@ -184,13 +174,12 @@ function validacionVacio(valor){
 }
 
 let fondos;
+
 ///////CREANDO ARRAYS
 
 function fondo(valor) {
 
    fondos=valor.value;
-
-  /* fondoCertificado.classList.remove('fondo1'); */
  
 }
 
@@ -235,11 +224,11 @@ function mostrarCertificados() {
   arrayDeLista=[];
 
 
-  //guardas firmas
+  //GUARDAR firmas
   arrayFirmas.push(firma1.value,firma2.value,firma3.value );
 
 
-  /// iterar array de destinatarios y creo los certificados
+  /// iterar array de DESTINATARIOS y CREO los certificados
   const cardCertificado= document.getElementById('fondoCertificado');
   let i;
     do {
@@ -290,14 +279,12 @@ function mostrarCertificados() {
                     </div>
                   </div>
                 </div> 
-     </div>
-     <br>
+            </div>
+         <br>
             `;
           
 
           };
-       
-     
 
       } while (i < arrayDestinatarios.length);
 

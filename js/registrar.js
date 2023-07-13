@@ -15,10 +15,22 @@ let passwordValidacion = document.getElementById('passwordValidacion');
 
 localStorage.clear();
 let usuario;
-
 let validoRegistro=[];
 
 
+//------CLASE NUEVO USUARIO------------//
+class nuevoUsuario{
+        
+  constructor (nombreUsuario, email , password){
+
+  this.nombreUsuario=nombreUsuario;
+  this.email=email;
+  this.password=password;
+
+  }
+}
+
+//BOTÓN REGISTRAR
 btnRegistrarme.addEventListener('click', (e) => {
   e.preventDefault();
   nombreUsuario = document.getElementById('nombreUsuario');
@@ -73,7 +85,7 @@ NavMenuCerrarSesion.addEventListener('click', (e) => {
 });
 
 
-//validaciones
+//VALIDACIONES
 function validacionCampos(valor){
 
   const vacio= valor != '';
@@ -132,7 +144,7 @@ const validacion = email=== emailUsuario && password === passwordUsuario;
   }
     
 }
-
+//MENÚ
 function enlaceCrear() {
 
 NavMenuCrear.classList.remove('noLogeado');
@@ -144,15 +156,4 @@ btnCrearCertificado.classList.add('logeado');
 
 };
 
-//------CLASE NUEVO USUARIO------------//
-class nuevoUsuario{
-        
-    constructor (nombreUsuario, email , password){
-
-    this.nombreUsuario=nombreUsuario;
-    this.email=email;
-    this.password=password;
-  
-  }
-}
 

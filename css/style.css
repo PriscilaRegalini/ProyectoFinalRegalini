@@ -127,6 +127,20 @@ h1 {
   padding: 30px;
 }
 
+.textH2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #ffcc33;
+  text-align: center;
+  text-align: center;
+}
+.textH2 strong {
+  font-family: "Delicious Handrawn", sans-serif;
+  font-size: 1.2em;
+}
+
 .registroUsuario {
   display: flex;
   flex-direction: column;
@@ -235,35 +249,35 @@ form {
 }
 
 .fondo1 {
-  background-image: url("../img/fondo1.png");
+  background-image: url("../img/fondo1.webp");
   background-repeat: no-repeat;
   width: 900px;
   height: 600px;
 }
 
 .fondo2 {
-  background-image: url("../img/fondo2.png");
+  background-image: url("../img/fondo2.webp");
   background-repeat: no-repeat;
   width: 900px;
   height: 600px;
 }
 
 .fondo3 {
-  background-image: url("../img/fondo3.png");
+  background-image: url("../img/fondo3.webp");
   background-repeat: no-repeat;
   width: 900px;
   height: 600px;
 }
 
 .fondo4 {
-  background-image: url("../img/fondo4.png");
+  background-image: url("../img/fondo4.webp");
   background-repeat: no-repeat;
   width: 900px;
   height: 600px;
 }
 
 .fondo5 {
-  background-image: url("../img/fondo5.png");
+  background-image: url("../img/fondo5.webp");
   background-repeat: no-repeat;
   width: 900px;
   height: 600px;
