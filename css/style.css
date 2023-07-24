@@ -38,7 +38,6 @@ section[id] {
 }
 
 .noLogeado {
-  background-color: aqua;
   opacity: 0;
   display: none;
 }
@@ -50,7 +49,7 @@ section[id] {
 
 .bgBlue {
   background-color: #0d6efd;
-  padding: 20px;
+  padding: 15px;
 }
 
 .bgLightBlue {
@@ -59,6 +58,24 @@ section[id] {
 
 .bgOrange {
   background-color: #ffcc33;
+}
+
+.muestraIndexOn {
+  width: 60%;
+}
+
+.muestraIndexOff {
+  width: 60%;
+  display: none;
+}
+
+.muestraIndexOn2 {
+  width: 60%;
+}
+
+.muestraIndexOff2 {
+  width: 60%;
+  display: none;
 }
 
 label {
@@ -74,7 +91,20 @@ h1 {
   color: #0dcaf0;
   text-align: center;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
+}
+
+#btnRegistrarUsuario {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .mrSubmit {
@@ -117,6 +147,9 @@ h1 {
 .mrSubmit .textLightBlue {
   color: #0dcaf0;
 }
+.mrSubmit .textBlue {
+  color: #0d6efd;
+}
 .mrSubmit .textSecundario {
   font-family: "Delicious Handrawn", sans-serif;
   font-size: 1.5em;
@@ -135,6 +168,7 @@ h1 {
   color: #ffcc33;
   text-align: center;
   text-align: center;
+  margin-top: -20px;
 }
 .textH2 strong {
   font-family: "Delicious Handrawn", sans-serif;
@@ -162,7 +196,7 @@ h1 {
   text-align: center;
   text-align: center;
   margin-bottom: -20px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .noMostrarCertificado {
@@ -281,6 +315,7 @@ form {
   background-repeat: no-repeat;
   width: 900px;
   height: 600px;
+  margin-top: 20px;
 }
 
 .h2Tipo {
@@ -291,8 +326,9 @@ form {
   color: black;
   text-align: center;
   text-align: center;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-top: 50px !important;
+  padding: 20px;
+  padding-top: 20px;
 }
 
 .h3Institucion {

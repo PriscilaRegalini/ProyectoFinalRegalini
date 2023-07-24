@@ -2,7 +2,6 @@
 const arrayCertificado=[];
 
 //formulario
-let selectFondo = document.getElementById('fondo');
 let fondoCertificado= document.getElementById('fondoCertificado'); 
 let formCertificado=document.getElementById('formCertificado');
 let tipo = document.getElementById('tipo');
@@ -21,6 +20,10 @@ let firma1= document.getElementById('firmante1');
 let firma2= document.getElementById('firmante2');
 let firma3= document.getElementById('firmante3');
 
+let graduacion= document.getElementById('graduacion');
+let reconocimiento= document.getElementById('reconocimiento');
+let participacion= document.getElementById('participacion');
+
 const arrayUsuarios=[];
 let listaDestinatarios;
 let arrayDestinatarios=[];
@@ -28,6 +31,9 @@ let arrayFirmas=[];
 let validarParaMostrar;
 let valido=[];
 
+let arrayTiposDeCertificado;
+
+        
 
 
 //------CLASE NUEVOCERTIFICADO------------//
@@ -94,44 +100,7 @@ btnCrear.addEventListener('click', (e) => {
   }
 });
 
-
 //VALIDACIONES
-
-function validoTipo() {
-  const validandoTipo= tipo.value === 'Seleccione el tipo de certificado';
-    if(validandoTipo){
-      tipoValidacion.classList.remove('bienHecho');
-      tipoValidacion.classList.add('malHecho');
-      tipoValidacion.textContent='Selecciona un Tipo';
-      valido.push(false);  
-    
-    }else {
-      tipoValidacion.textContent='Bien hecho!';
-      tipoValidacion.classList.remove('malHecho');
-      tipoValidacion.classList.add('bienHecho');
-      valido.push(true);
-      
-    }
-}
-
-
-function validoFondo() {
-  const ValidandoFondo= selectFondo.value != 'sinFondo';
-  let fondoValidacion= document.getElementById('fondoValidacion');  
-    if(!ValidandoFondo){
-      fondoValidacion.classList.remove('bienHecho');
-      fondoValidacion.classList.add('malHecho');
-      fondoValidacion.textContent='Selecciona un Fondo';
-      valido.push(false);   
-    }else {
-      fondoValidacion.textContent='Bien hecho!';
-      fondoValidacion.classList.remove('malHecho');
-      fondoValidacion.classList.add('bienHecho');
-      valido.push(true);
-      
-    }
-}
-
 function validandoCampos(){
 
   institucion=validacionVacio(institucion.value);

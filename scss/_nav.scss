@@ -4,6 +4,7 @@ nav{
     .mrSubmitNav{
         @include  texto($fontSecundaria, $textLg, $fontBold, $textXl, map-get($map: $colores, $key:'tres' ), left );
         padding-left: 10px;
+      
     }
     a{
         font-family: $fontPrincipal;
@@ -29,7 +30,6 @@ section[id]{
     display: flex;
 }
 .noLogeado{
-    background-color: aqua;
     opacity: 0;
     display: none;
 }

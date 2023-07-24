@@ -4,11 +4,13 @@
     padding: 20px;
 }
 //bg
+
 .bgBlue{
 
     background-color: map-get($map: $colores, $key:'tres' );
-    padding: 20px;
+    padding: 15px; 
 }
+
 .bgLightBlue{
 
     background-color: map-get($map: $colores, $key:'cuatro' );
@@ -18,7 +20,28 @@
     background-color: map-get($map: $colores, $key:'ocho' );
 }
 
+.muestraIndexOn{
+    width: 60%;
 
+
+}
+.muestraIndexOff{
+    width: 60%;
+    display: none;
+
+
+}
+.muestraIndexOn2{
+    width: 60%;
+
+
+}
+.muestraIndexOff2{
+    width: 60%;
+    display: none;
+
+
+}
 
 label {
     padding: 10px;
@@ -27,9 +50,16 @@ label {
 
 h1{
     @include  texto($fontPrincipal, $textXl, $fontBold, $textXl, map-get($map: $colores, $key:'cuatro' ), center );
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
+#btnRegistrarUsuario{
+ @include  texto($fontPrincipal, $textMd, $fontBold, $textXl, map-get($map: $colores, $key:'seis' ), center );
+padding: 10px 20px;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
 
 
 
@@ -64,7 +94,10 @@ h1{
 
         color: map-get($map: $colores, $key:'cuatro' ) ;
     }
+    .textBlue{
 
+        color: map-get($map: $colores, $key:'tres' ) ;
+    }
     .textSecundario{
         font-family: $fontSecundaria;
         font-size: $textMd;
@@ -78,6 +111,7 @@ h1{
 
 .textH2{
     @include  texto($fontPrincipal, $textMd, $fontBold, $textXl, map-get($map: $colores, $key:'ocho' ), center );
+    margin-top: -20px;
 
     strong{
         font-family: $fontSecundaria;
@@ -102,7 +136,7 @@ align-items: center;
     .tituloRegistro{
         @include  texto($fontPrincipal, $textMd, $fontBold, $textXl, map-get($map: $colores, $key:'cuatro' ), center );
         margin-bottom: -20px;
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
 }
@@ -159,8 +193,6 @@ form{
 
 }
 
-
-
 .certificadoStyle{
     font-family: $fontPrincipal;
     font-weight: $fontBold;
@@ -185,6 +217,7 @@ form{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
 }
@@ -220,6 +253,7 @@ form{
     background-repeat: no-repeat;
     width: 900px;
     height: 600px;
+    margin-top: 20px;
 
 }
 
@@ -228,8 +262,9 @@ form{
 .h2Tipo{
 
     @include  texto($fontPrincipal, $textLg, $fontBold, $textLg, map-get($map: $colores, $key:'cinco' ), center );
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-top: 50px!important;
+    padding: 20px;
+    padding-top: 20px;
 }
 
 

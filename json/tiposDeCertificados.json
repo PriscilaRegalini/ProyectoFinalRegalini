@@ -1,0 +1,20 @@
+
+   [
+        {
+        "nombre":"de Graduación",
+        "id":"graduación",
+        "valor":"CERTIFICADO DE GRADUACIÓN"   
+        },
+        {
+            "nombre":"de Reconocimiento",
+            "id":"reconocimiento",
+            "valor":"CERTIFICADO DE RECONOCIMIENTO"   
+        },
+        {
+            "nombre":"de Participación",
+            "id":"participacion",
+            "valor":"CERTIFICADO DE PARTICIPACIÓN"   
+        }
+   ]
+
+

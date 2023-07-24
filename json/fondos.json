@@ -1,0 +1,28 @@
+
+[
+    {
+    "nombre":"Con marco",
+    "id":"fondo1",
+    "valor":"fondo1"   
+    },
+    {
+        "nombre":"En rojo y azul",
+        "id":"fondo2",
+        "valor":"fondo2"   
+    },
+    {
+        "nombre":"En Colores",
+        "id":"fondo3",
+        "valor":"fondo3"   
+    },
+    {
+        "nombre":"En azul",
+        "id":"fondo4",
+        "valor":"fondo4"   
+    },
+    {
+        "nombre":"Sweet",
+        "id":"fondo5",
+        "valor":"fondo5"   
+    }
+]

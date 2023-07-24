@@ -33,24 +33,37 @@
       </nav>
 
           <header id="mrSubmit" class="mrSubmit">
-            <div class=" text-center presentacion ">
-              <div class="card-body">
-                <h1 id="h1Index">CREA CERTIFICADOS</h1>
-                <h2 class="textGray">El <strong>tiempo</strong> es valioso, por ésto decidimos </h2>
-                <h2 class="textGray"> acercar <strong>plantillas prediseñadas</strong> para facilitar ésta tarea.</h2>
-                <h2 class="textGray ">Selecciona el <strong>fondo</strong>, completa los campos y <strong>listo!</strong></h2>
-                <br>     
-                <h2 class="textGray textLightBlue bgBlue">ASÍ DE <strong class="textSecundario">SIMPLE</strong></h2>   
-            </div>
 
+            <div class="container-fluid text-center bordeBottom">
+              <div class="row">
+                <div class="col-6">  
+                  <h1 id="h1Index">CREA CERTIFICADOS</h1>
+                  <div id="textoIndex col">
+                    <h2 class="textGray">El <strong>tiempo</strong> es valioso, por ésto decidimos </h2>
+                    <h2 class="textGray"> acercar <strong>plantillas prediseñadas</strong> para facilitar ésta tarea.</h2>
+                    <h2 class="textGray ">Selecciona el <strong>fondo</strong>, completa los campos y <strong>listo!</strong></h2>
+                  </div>
+                </div>
+                  <div class="col-6">  <div class="col">
+                    <img id="muestraIndex" class="muestraIndexOn" src="../img/certificadoDeMuestra.webp" alt="Certificado de Graduación a modo de muestra de las posibilidades del sitio">
+                    <img id="muestraIndex2" class="muestraIndexOff2" src="/img/certificadoMuestra2.webp" alt="Certificado de Graduación a modo de muestra de las posibilidades del sitio">
+                  </div>
+                </div>
+              </div>
+            </div>
             
+           
           </header>
           <main>
         <div class="registroUsuario">
           <h2 id="h3Index" class="tituloRegistro">Regístrate para comenzar</h2>
           <a id="btnCrearCertificado" class="btn btn-primary noLogeado " href="pages/crear.html">Crear Certificado</a>
+          <br>
+            <button id="btnRegistrarUsuario" type="submit" class="btn btn-primary">Registrarme</button>
+     
+          
 
-          <form  id="formRegistro" class="container-fluid boxForm presentacion">
+          <!-- <form  id="formRegistro" class="container-fluid boxForm presentacion">
             <div class="col-md-4">
               <input id="nombreUsuario" type="text" class="form-control" placeholder="Nombre" aria-label="Last name">
               <label id="usuarioValidacion" class="bienHecho"> </label>
@@ -70,18 +83,21 @@
             <button id="registrarme" type="submit" class="btn btn-primary">Registrarme</button>
           </form>    
 
-        </div>
-        <div class="mrSubmit">
+        </div> -->
+       <!--  <div class="mrSubmit">
             <div class=" text-center presentacion ">       
               <h2 class=" textLightBlue textSecundario bordeBottom"><strong class="textSecundario">ENTREGAR FELICIDAD</strong><span class="textH4 textSecundario"> se vuelve sencillo.</span></h2>
             </div>
-        </div>
+        </div> -->
 
     </main>
 
     <footer>
     </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="js/presentacionIndex.js"> </script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
         <script src="js/registrar.js"> </script>
   </body>

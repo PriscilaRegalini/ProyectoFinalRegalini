@@ -30,8 +30,78 @@ class nuevoUsuario{
   }
 }
 
+//prueba
+
+const btnRegistrarUsuario = document.getElementById('btnRegistrarUsuario');
+
+btnRegistrarUsuario.addEventListener('click', (e) => {e.preventDefault();
+
+  registrarUsuario();
+  async function registrarUsuario() {
+
+        const { value: text } = await Swal.fire({
+          title: 'Ingresa un nombre de usuario',
+          input: 'text',
+          inputPlaceholder: 'Tu nombre'
+        })
+        
+        if (text) {
+          Swal.fire(`El nombre ingresado es: ${text}`)
+          nombreUsuario=text;
+        }
+
+        const { value: email } = await Swal.fire({
+          title: 'Ingresa tu email',
+          input: 'email',
+          inputPlaceholder: 'ejemplo@ejemplo.com'
+        })
+        
+        if (email) {
+          Swal.fire(`El email ingresado es: ${email}`)
+
+        }
+
+        const { value: password } = await Swal.fire({
+          title: 'Ingresa una contraseña',
+          input: 'password',
+          inputPlaceholder: 'Ingresa contraseña',
+          inputAttributes: {
+            maxlength: 10,
+            autocapitalize: 'off',
+            autocorrect: 'off'
+          }
+        })
+        
+        if (password) {
+         
+          
+        }
+        usuario=new nuevoUsuario(nombreUsuario, email, password);
+        console.log(usuario)
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+
+        verificarLogeo(usuario);
+        Swal.fire(
+                   `Felicitaciones ${text}`,
+                   'Te registraste con éxito. Puedes comenzar a crear',
+                   'success'
+                 )
+       
+   }
+
+
+});
+NavMenuCerrarSesion.addEventListener('click', (e) => {
+  e.preventDefault();
+  localStorage.clear();
+});
+/////
+
+
+
+
 //BOTÓN REGISTRAR
-btnRegistrarme.addEventListener('click', (e) => {
+/* btnRegistrarme.addEventListener('click', (e) => {
   e.preventDefault();
   nombreUsuario = document.getElementById('nombreUsuario');
   email = document.getElementById('email');
@@ -82,11 +152,11 @@ NavMenuCerrarSesion.addEventListener('click', (e) => {
   e.preventDefault();
   localStorage.clear();
  
-});
+}); */
 
 
 //VALIDACIONES
-function validacionCampos(valor){
+/* function validacionCampos(valor){
 
   const vacio= valor != '';
 
@@ -109,37 +179,41 @@ function validacionCampos(valor){
       
     }
   }
-}
+} */
 //
-
+/* 
 function registrarUsuario() {
 
 usuario=new nuevoUsuario(nombreUsuario, email, password);
 
 localStorage.setItem('usuario', JSON.stringify(usuario));
 
-}
+} */
 
-function verificarLogeo() {
+function verificarLogeo(usuario) {
 
     traigoUsuario= JSON.parse(localStorage.getItem('usuario'));
+
+    console.log(traigoUsuario);
+    console.log(traigoUsuario.email);
 
     emailUsuario=traigoUsuario.email;
     passwordUsuario=traigoUsuario.password;
 
     
-const validacion = email=== emailUsuario && password === passwordUsuario;
+const validacion = usuario.email=== emailUsuario && usuario.password === passwordUsuario;
 
   if (!validacion) {
       console.log('campos incorrectos, vuelva a intentarlo');
   }else {
-      formRegistro.remove();
+      mrSubmit.remove();
       const h3Index=document.getElementById('h3Index');
       h3Index.textContent = 
             ` Te registraste con éxito, ya puedes comenzar a crear!
             `;
-      const mrSubmit=document.getElementById('mrSubmit');
-      mrSubmit.remove();
+            btnRegistrarUsuario.remove();
+      /* const mrSubmit=document.getElementById('mrSubmit');
+      mrSubmit.remove(); */
       enlaceCrear();
   }
     
