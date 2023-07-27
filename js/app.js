@@ -53,9 +53,9 @@ class nuevoCertificado{
 //MENÚ Crear Certificado
 const crearCertificado=document.getElementById('crearCertificado');
 
-crearCertificado.onclick = myFunction;
+crearCertificado.onclick = limpiarFormulario;
 
-function myFunction() {
+function limpiarFormulario() {
   localStorage.removeItem('certificadoCreado');
 }
 
@@ -95,7 +95,7 @@ btnCrear.addEventListener('click', (e) => {
         background: "linear-gradient(to right, #f77373, #d52727)",
       },
       gravity: "top",
-  position: "left", 
+      position: "left", 
     }).showToast();
   }
 });

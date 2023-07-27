@@ -6,7 +6,18 @@ fetch('../json/tiposDeCertificados.json')
     if (response.ok) {
         return response.json(); 
     } else {
-       console.log('hubo una response distinta a 200');
+        Toastify({
+            text: 'Error al cargar "Tipos de Certificados". Vuelve a intentarlo más tarde',
+            duration: 5000,
+            style: {
+              background: "linear-gradient(to right, #f77373, #d52727)",
+            },
+            offset: {
+              x: 0, 
+              y: 250 
+            },
+            position: "left", 
+          }).showToast();
     }
 })
 .then((tipos) => {

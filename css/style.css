@@ -175,19 +175,24 @@ h1 {
   font-size: 1.2em;
 }
 
-.registroUsuario {
+.registroUsuarioOff {
+  display: none;
+}
+
+.registroUsuarioOn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.registroUsuario form {
+.registroUsuarioOn form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.registroUsuario .tituloRegistro {
+
+.tituloRegistro {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   font-weight: 600;
@@ -197,6 +202,7 @@ h1 {
   text-align: center;
   margin-bottom: -20px;
   margin-top: 10px;
+  padding: 30px;
 }
 
 .noMostrarCertificado {

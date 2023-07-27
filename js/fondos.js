@@ -15,9 +15,23 @@ fetch('../json/fondos.json')
             if (response.ok) {
                 return response.json(); 
             } else {
-               console.log('hubo una response distinta a 200');
+              Toastify({
+                text: 'Error al cargar "Fondos". Vuelve a intentarlo más tarde',
+                duration: 5000,
+                style: {
+                  background: "linear-gradient(to right, #f77373, #d52727)",
+                },
+                offset: {
+                  x: 0, 
+                  y: 250 
+                },
+                position: "left", 
+              }).showToast();
+              
             }
+            
         })
+       
         .then((fondos) => {
             arrayDeFondos=fondos;
             fondos.forEach(({nombre,id, valor}) => {
@@ -94,12 +108,13 @@ fetch('../json/fondos.json')
                     console.log('no entró en ningun caso');
                     break;
                 }
-
+             
               });
-
+              
             });
+            
         });
-
+        
 
   //VALIDACIÓN
 

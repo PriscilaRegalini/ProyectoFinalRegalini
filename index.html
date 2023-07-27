@@ -14,7 +14,7 @@
 <body>
       <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand mrSubmitNav" href="index.html">Mr. Submit</a>
+            <a id="idMenuMrSubmit" class="navbar-brand mrSubmitNav" href="index.html">Mr. Submit</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,15 +55,16 @@
            
           </header>
           <main>
-        <div class="registroUsuario">
-          <h2 id="h3Index" class="tituloRegistro">Regístrate para comenzar</h2>
-          <a id="btnCrearCertificado" class="btn btn-primary noLogeado " href="pages/crear.html">Crear Certificado</a>
+            <h2 id="h3Index" class="tituloRegistro">Regístrate para comenzar</h2>
+            <a id="btnCrearCertificado" class="btn btn-primary noLogeado " href="pages/crear.html">Crear Certificado</a>
+        <div id="idRegistroUsuario" class="registroUsuarioOn">
           <br>
             <button id="btnRegistrarUsuario" type="submit" class="btn btn-primary">Registrarme</button>
-     
-          
-
-          <!-- <form  id="formRegistro" class="container-fluid boxForm presentacion">
+          </div>
+         
+        <div id="idFormRegistro2" class="registroUsuarioOff">
+         
+          <form  id="formRegistro" class="container-fluid boxForm presentacion formOff">
             <div class="col-md-4">
               <input id="nombreUsuario" type="text" class="form-control" placeholder="Nombre" aria-label="Last name">
               <label id="usuarioValidacion" class="bienHecho"> </label>
@@ -83,12 +84,7 @@
             <button id="registrarme" type="submit" class="btn btn-primary">Registrarme</button>
           </form>    
 
-        </div> -->
-       <!--  <div class="mrSubmit">
-            <div class=" text-center presentacion ">       
-              <h2 class=" textLightBlue textSecundario bordeBottom"><strong class="textSecundario">ENTREGAR FELICIDAD</strong><span class="textH4 textSecundario"> se vuelve sencillo.</span></h2>
-            </div>
-        </div> -->
+        </div>
 
     </main>
 
