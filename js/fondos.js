@@ -5,9 +5,7 @@ let fondo2 = document.getElementById('fondo2');
 let fondo3 = document.getElementById('fondo3');
 let fondo4 = document.getElementById('fondo4');
 let fondo5 = document.getElementById('fondo5');
-
 let arrayDeFondos;
-
 let opcion;
 ////PETICION PARA CARGAR FONDOS AL FORMULARIO Y EVENTOS
 fetch('../json/fondos.json')
@@ -26,10 +24,8 @@ fetch('../json/fondos.json')
                   y: 250 
                 },
                 position: "left", 
-              }).showToast();
-              
-            }
-            
+              }).showToast();             
+            }           
         })
        
         .then((fondos) => {
@@ -107,17 +103,13 @@ fetch('../json/fondos.json')
                   default:
                     console.log('no entró en ningun caso');
                     break;
-                }
-             
-              });
-              
-            });
-            
+                 }         
+              });           
+            });         
         });
         
 
   //VALIDACIÓN
-
 function validoFondo() {
   const ValidandoFondo= selectFondo.value != 'sinFondo';
   let fondoValidacion= document.getElementById('fondoValidacion');  
@@ -130,7 +122,6 @@ function validoFondo() {
       fondoValidacion.textContent='Bien hecho!';
       fondoValidacion.classList.remove('malHecho');
       fondoValidacion.classList.add('bienHecho');
-      valido.push(true);
-      
+      valido.push(true);      
     }
 }

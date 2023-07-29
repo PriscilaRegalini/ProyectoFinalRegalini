@@ -21,18 +21,14 @@ fetch('../json/tiposDeCertificados.json')
     }
 })
 .then((tipos) => {
-
   arrayTiposDeCertificado= tipos;
-
   tipos.forEach(({nombre,id, valor}) => {
     let option = document.createElement('option');
     option.textContent = `${nombre}`;
     option.value = `${valor}`; 
     option.id= `${id}`; 
     tipo.appendChild(option);
-
   });
-
 });
 
 //VALIDACION
@@ -42,13 +38,11 @@ function validoTipo() {
         tipoValidacion.classList.remove('bienHecho');
         tipoValidacion.classList.add('malHecho');
         tipoValidacion.textContent='Selecciona un Tipo';
-        valido.push(false);  
-      
+        valido.push(false);       
       }else {
         tipoValidacion.textContent='Bien hecho!';
         tipoValidacion.classList.remove('malHecho');
         tipoValidacion.classList.add('bienHecho');
-        valido.push(true);
-        
+        valido.push(true);      
       }
   }
