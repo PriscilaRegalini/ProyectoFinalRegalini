@@ -76,4 +76,9 @@
    <li>Storage y JSON</li>
    <li>Spread</li>
    <li>Librerías</li>
+   <li>asincronía</li>
+   <li>Promesas</li>
+   <li>Ajax y fetch</li>
+   <li>Api</li>
+   <li>ASYNC - AWAIT</li>  
 </ul>
